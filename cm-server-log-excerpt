@@ -1,0 +1,33 @@
+2021-04-15 14:33:59,406 INFO NodeScannerThread-1:com.cloudera.server.cmf.node.NodeScanner: Connected to SSH on node devbiawxm101.aoins.com with port 22 (latency PT0S)
+2021-04-15 14:33:59,408 INFO NodeScannerThread-1:com.cloudera.server.cmf.node.NodeScannerService: Request 1 observed finished scan of node devbiawxm101.aoins.com
+2021-04-15 14:33:59,408 INFO scm-web-104:com.cloudera.server.cmf.node.NodeScannerService: Request 1 returning 1/1 scans
+2021-04-15 14:34:24,552 INFO pool-7-thread-1:com.cloudera.server.cmf.components.CmServerStateSynchronizer: (20 skipped) Synced up
+2021-04-15 14:34:35,551 INFO pool-7-thread-1:com.cloudera.server.cmf.components.CmServerStateSynchronizer: (20 skipped) Cleaned up
+2021-04-15 14:34:50,464 INFO scm-web-155:com.cloudera.enterprise.JavaMelodyFacade: Entering HTTP Operation: Method:POST, Path:/add-hosts-wizard/install
+2021-04-15 14:34:50,468 INFO scm-web-155:com.cloudera.server.cmf.node.NodeConfiguratorService: Creating request with id 4
+2021-04-15 14:34:50,468 INFO scm-web-155:com.cloudera.cmf.service.ServiceHandlerRegistry: Executing Global command GlobalHostInstall GlobalHostInstallCommandArgs{sshPort=22, userName=devdlams, password=REDACTED, passphrase=REDACTED, privateKey=REDACTED, parallelInstallCount=10, cmRepoUrl=https://5d668543-43c0-4cc5-8578-a7586cd85cc2:57f5aaef973b@archive.cloudera.com/p/cm7/7.3.1, gpgKeyCustomUrl=null, gpgKeyOverrideBundle=<none>, unlimitedJCE=false, javaInstallStrategy=NONE, agentUserMode=ROOT, cdhVersion=-1, cdhRelease=NONE, cdhRepoUrl=null, buildCertCommand=/opt/cloudera/AutoTLS/generate_host_cert, sslCertHostname=devbiawxm101.aoins.com, reqId=4, skipPackageInstall=false, skipCloudConfig=false, proxyProtocol=HTTP, proxyServer=null, proxyPort=0, proxyUserName=null, proxyPassword=REDACTED, cmca=<none>, hostCerts=<none>, customTrustStorePath=/var/lib/cloudera-scm-agent/agent-cert/cm-auto-global_truststore.jks, customTrustStorePassword==FTQvFeCXHBpb_3w, customTrustStoreType=jks, hosts=[DEVBIAWXM101.aoins.com], existingHosts=[], agentReportedHostnames=null}.
+2021-04-15 14:34:50,469 INFO scm-web-155:com.cloudera.cmf.command.flow.CmdStep: Executing command 1546333201 work: Execute 1 steps in sequence
+2021-04-15 14:34:50,469 INFO scm-web-155:com.cloudera.cmf.command.flow.CmdStep: Executing command 1546333201 work: Install on 1 hosts.
+2021-04-15 14:34:50,469 INFO scm-web-155:com.cloudera.cmf.command.flow.CmdStep: Executing command 1546333201 work: Install on DEVBIAWXM101.aoins.com.
+2021-04-15 14:34:50,470 INFO scm-web-155:com.cloudera.server.cmf.node.NodeConfiguratorService: Adding password-based configurator for DEVBIAWXM101.aoins.com
+2021-04-15 14:34:50,470 INFO scm-web-155:com.cloudera.server.cmf.node.NodeConfiguratorService: Submitted configurator for DEVBIAWXM101.aoins.com with id 5
+2021-04-15 14:34:50,470 INFO scm-web-155:com.cloudera.cmf.service.ServiceHandlerRegistry: Global Command GlobalHostInstall launched with id=1546333201
+2021-04-15 14:34:50,470 INFO NodeConfiguratorThread-4-0:com.cloudera.cmf.model.HostInstallArgs: Deprecated option for unlimited strength JCE. Value set to False.
+2021-04-15 14:34:50,473 INFO NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.NodeConfiguratorProgress: DEVBIAWXM101.aoins.com: Transitioning from INIT (PT0.003S) to CONNECT
+2021-04-15 14:34:50,474 INFO NodeConfiguratorThread-4-0:net.schmizz.sshj.transport.TransportImpl: Client identity string: SSH-2.0-SSHJ_0_14_0
+2021-04-15 14:34:50,475 INFO scm-web-155:com.cloudera.enterprise.JavaMelodyFacade: Exiting HTTP Operation: Method:POST, Path:/add-hosts-wizard/install, Status:200
+2021-04-15 14:34:50,477 INFO CommandPusher-1:com.cloudera.server.cmf.CommandPusherThread: Acquired lease lock on DbCommand:1546333201
+2021-04-15 14:34:50,481 INFO NodeConfiguratorThread-4-0:net.schmizz.sshj.transport.TransportImpl: Server identity string: SSH-2.0-OpenSSH_7.4
+2021-04-15 14:34:50,489 INFO NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.NodeConfiguratorProgress: DEVBIAWXM101.aoins.com: Transitioning from CONNECT (PT0.016S) to AUTHENTICATE
+2021-04-15 14:34:50,560 INFO NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.NodeConfiguratorProgress: DEVBIAWXM101.aoins.com: Transitioning from AUTHENTICATE (PT0.071S) to MAKE_TEMP_DIR
+2021-04-15 14:34:50,691 INFO NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.NodeConfigurator: Executing mktemp -d /tmp/scm_prepare_node.XXXXXXXX on DEVBIAWXM101.aoins.com
+2021-04-15 14:34:50,697 INFO NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.NodeConfiguratorProgress: DEVBIAWXM101.aoins.com: Transitioning from MAKE_TEMP_DIR (PT0.137S) to COPY_FILES
+2021-04-15 14:34:50,749 INFO NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.NodeConfigurator: Using default key bundle URL
+2021-04-15 14:34:51,658 INFO NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.HostCertConfigurator: Using host certificate generator command: /opt/cloudera/AutoTLS/generate_host_cert
+2021-04-15 14:34:51,900 ERROR NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.HostCertConfigurator: Failed to generate certificates for DEVBIAWXM101.aoins.com: 
+2021-04-15 14:34:51,900 INFO NodeConfiguratorThread-4-0:com.cloudera.server.cmf.node.NodeConfiguratorProgress: DEVBIAWXM101.aoins.com: Setting COPY_FILES as failed and done state
+2021-04-15 14:34:51,900 INFO NodeConfiguratorThread-4-0:net.schmizz.sshj.transport.TransportImpl: Disconnected - BY_APPLICATION
+2021-04-15 14:34:51,900 INFO NodeConfiguratorThread-4-0:com.cloudera.cmf.model.HostInstallArgs: Deprecated option for unlimited strength JCE. Value set to False.
+2021-04-15 14:34:55,482 INFO CommandPusher-1:com.cloudera.server.cmf.CommandPusherThread: Acquired lease lock on DbCommand:1546333201
+2021-04-15 14:34:55,488 ERROR CommandPusher-1:com.cloudera.cmf.command.flow.WorkOutputs: CMD id: 1546333201 Failed to complete installation on host DEVBIAWXM101.aoins.com.
+2021-04-15 14:34:55,488 ERROR CommandPusher-1:com.cloudera.cmf.model.DbCommand: Command 1546333201(GlobalHostInstall) has completed. finalstate:FINISHED, success:false, msg:Failed to complete installation.
