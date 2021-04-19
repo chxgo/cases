@@ -1,3 +1,4 @@
+```java
 2021-04-15 14:33:59,406 INFO NodeScannerThread-1:com.cloudera.server.cmf.node.NodeScanner: Connected to SSH on node devbiawxm101.aoins.com with port 22 (latency PT0S)
 2021-04-15 14:33:59,408 INFO NodeScannerThread-1:com.cloudera.server.cmf.node.NodeScannerService: Request 1 observed finished scan of node devbiawxm101.aoins.com
 2021-04-15 14:33:59,408 INFO scm-web-104:com.cloudera.server.cmf.node.NodeScannerService: Request 1 returning 1/1 scans
@@ -31,3 +32,4 @@
 2021-04-15 14:34:55,482 INFO CommandPusher-1:com.cloudera.server.cmf.CommandPusherThread: Acquired lease lock on DbCommand:1546333201
 2021-04-15 14:34:55,488 ERROR CommandPusher-1:com.cloudera.cmf.command.flow.WorkOutputs: CMD id: 1546333201 Failed to complete installation on host DEVBIAWXM101.aoins.com.
 2021-04-15 14:34:55,488 ERROR CommandPusher-1:com.cloudera.cmf.model.DbCommand: Command 1546333201(GlobalHostInstall) has completed. finalstate:FINISHED, success:false, msg:Failed to complete installation.
+```
